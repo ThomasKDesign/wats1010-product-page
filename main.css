@@ -1,28 +1,17 @@
-/* Styles for Product Page Customization */
+ /* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
 html {
    background-color: white;
 }
 
-body {
-  background-image: url("img/black-n-white-Seattle-skyline.jpg");
-	
-  
-  background-repeat: none;
-	margin: 2px 2px 2px 2px;
-  padding-top: 70px; 
-  padding-bottom: 20px;
-  font-weight: 300;
-   
-}
 
-header {
-	
+header {  
+	 
 	margin-top: 0;
 }
 
-
+   
 p {
 	font-size: 135%;
 }
@@ -45,11 +34,6 @@ li {
 }
 
 
-.main {
-	
-	margin-top: 0;
-}
-
 #brand a:hover {
 	color: red;
 }
@@ -66,7 +50,7 @@ h1 {
 }
 
 h2 {
-		color: black;
+	color: black;
 	text-shadow: 2px 2px white;
   display: inline;
   font-weight: bold;
@@ -74,11 +58,7 @@ h2 {
 	text-shadow: -2px 2px white;
 }
 
-h3 {
-	
-	color: white;
 
-}
 
 #store-name {
 	
@@ -86,72 +66,59 @@ h3 {
 
 }
 
-
-#images-carousel {
-	padding:0;
-	margin-top:348px;
-	width: 99%;
-	height: 465px;
-}
-.carousel-caption {
-	color: red;
-	font-size: 180%;
-	text-shadow: 2px 2px black;
-	margin-bottom: 475px; 
-}
-	
-.carousel-inner {
+.carousel-wrap {
 	width: 100%;
-	height: 465px;
-	padding:0;
-	
+	max-width: 1300px;
+	overflow: hidden;
+	border-bottom: 1px solid white;
+	padding-left: 0;
+	padding-right: 0;
 }
 
-
-.main {
-	
-	margin-top: 200px;
+.carousel-caption {
+	padding-top: 50px;
+	font-size: 200%;
+	text-shadow: 2px 2px black;
 }
 
-
-#video-and-testimonials {
-	background-color: #333333;
-	height: 510px;
-	width:100%;
-	margin: 0;
-	padding: 0;
-	
-	
+@media screen and (max-width: 650px) {
+	.carousel-caption {
+	font-size: 100%;
+	text-shadow: none;
+}
 }
 
-.video {
-	margin: 5px 2px 0 10px;
-	padding: 5px;
-	
+#video {
+	max-width: 1300px;
+	height: auto;
+	color: #333333;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #video h3 {
 	margin-top: 0;
-	padding: 12px;
+	padding-left: 10px;
 	color: red;
 }
 
-.testimonials {
+#testimonials {
 	margin-top: 0px;
 	padding: 12px;
 	
 }
 
-.testimonials h3 {
+#testimonials h3 {
+	padding-left: 10px;
 	margin-top: 0px;
 	color:red;
 }
 
-.testimonials p {
+#testimonials p {
 	margin-top: 0px;
 	color: white;
 	font-style: italic;
-	background: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.5);
 }
 
 .glyphicon {
@@ -274,5 +241,289 @@ footer p {
 }
 
 footer text {
+	font-size-adjust: small;
+}
+/* Styles for Product Page Customization */
+/* NOTE: Do not edit the Bootstrap CSS files. */
+
+html {
+   background-color: white;
+}
+
+/*body {
+  background-image: url("img/black-n-white-Seattle-skyline.jpg");
+	background-repeat: none;
+	margin: 2px 2px 2px 2px;
+  padding-top: 70px; 
+  padding-bottom: 20px;
+  font-weight: 300;
+   
+} */
+
+header {
+	
+	margin-top: 0;
+}
+
+
+p {
+	font-size: 135%;
+}
+
+li {
+	font-size: 135%;
+}
+
+
+#navigation {
+	height: 50px;
+	position: fixed;
+	
+}
+
+.navbar-header {
+  width: 100%;
+  padding: 0;
+	margin-top: 0;
+}
+
+
+.main {
+	
+	margin-top: 0;
+}
+
+#brand a:hover {
+	color: red;
+}
+
+#right a:hover {
+	text-decoration: underline;
+	
+}
+
+h1 {
+  color: red;
+  font-size: 440%;
+	text-shadow: -3px 3px black;
+}
+
+h2 {
+	color: black;
+	text-shadow: 2px 2px white;
+  display: inline;
+  font-weight: bold;
+  font-size: 215%; 
+	text-shadow: -2px 2px white;
+}
+
+h3 {
+	
+	color: white;
+
+}
+
+#store-name {
+	
+	/*width: 500px;
+	float: right;*/
+	
+	
+
+}
+
+
+#images-carousel {
+	padding:0;
+	margin-top:348px;
+	width: 99%;
+	height: 465px;
+}
+.carousel-caption {
+	color: red;
+	font-size: 180%;
+	text-shadow: 2px 2px black;
+	margin-bottom: 475px; 
+}
+	
+.carousel-inner {
+	width: 100%;
+	height: 465px;
+	padding:0;
+	
+}
+
+
+.main {
+	
+	margin-top: 200px;
+}
+
+
+#video-and-testimonials {
+	background-color: #333333;
+	height: 510px;
+	width:100%;
+	margin: 0;
+	padding: 0;
+	
+	
+}
+
+.video {
+	margin: 5px 2px 0 10px;
+	padding: 5px;
+	
+}
+
+#video h3 {
+	margin-top: 0;
+	padding: 12px;
+	color: red;
+}
+
+.testimonials {
+	margin-top: 0px;
+	padding: 12px;
+	
+}
+
+.testimonials h3 {
+	margin-top: 0px;
+	color:red;
+}
+
+.testimonials p {
+	margin-top: 0px;
+	color: white;
+	font-style: italic;
+	background: rgba(0,0,0,0.5);
+}
+
+.glyphicon {
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	color: red;
+	font-size: 500%;
+}
+
+#descriptions {
+	clear: top;	
+}
+
+.col-sm-4 span {
+	padding-left: 17rem;
+}
+
+
+.col-sm-4 h3 {
+	margin-top:0;
+	text-align: center;
+	color: black;
+	
+}
+.col-sm-4 h3 p {
+	text-align: center;
+	color: black;
+	padding:0 0 0 7rem;
+}
+
+#comment-social {
+  margin-top: 0;
+  background-color: #333333;
+  height: 200px;
+}
+
+#comment {
+	padding-left: 3rem;
+	height: 200px;
+	align-content: center;
+	
+}
+
+#comment h3 textarea {
+	
+	align-content: center;
+	
+}
+
+.form-control {
+	width: 500px;
+}
+
+#coment h3 {
+	color: white;
+}
+
+.social-media img {
+	width: 50px;
+	height: 50px;
+	padding-left:0;
+}
+
+#social h3  {
+	padding-left: 4rem;
+	
+}
+
+
+.social-media li {
+
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  background: rgba(0,0,0,0.5);
+}
+
+.social-media li.facebook:hover {
+	background-color: #006;
+
+}
+
+.social-media li.twitter:hover {
+   background-color: #3399ff;
+
+}
+
+ .social-media li.pinterest:hover {
+  background-color: #cc0000;
+
+ }
+
+.social-media li.googleplus:hover {
+  background-color: #99ff33;
+}
+
+.social-media li.linkedin :hover {
+  background-color:  white;
+	
+}
+
+.social-media li.tumblr :hover {
+  background-color: #ffff00;
+}
+
+ }
+footer {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+footer {
+	background-color: white;
+	padding-top: 2rem;
+	height: 70px;
+	width: 100%;	
+}
+
+footer p {
+	text-align: center;
+	
+}
+
+footer>text {
 	font-size-adjust: small;
 }
