@@ -78,9 +78,9 @@
 
   <section id="myCarousel">    
 			<!-- Carousel wrapper div -->
-				<div class="carousel slide" data-ride="carousel">
-					<div class="container-fluid" id="images-carousel">
-					<!-- Indicators -->
+				<div class="container-fluid carousel-wrap">
+					<div class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
 						 <ol class="carousel-indicators">
 							 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 							 <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -132,10 +132,8 @@
   </section>
    
 	<!-- Video and Testimonials divs wrapper-->
-	<section id="video-and-testimonials">
-		<div class="container">
-	 		<div class="row">
- 	 		 <div class="col-md-6">
+	<div class="container-fluid explainer-vid wrapper row" id="video">
+			<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 video vid">
 				<h3>Take a Tour</h3><br>
 				<p class="video"><iframe width="450" height="300" src="https://www.youtube.com/embed/L48g1ZWLMdo" frameborder="0" allowfullscreen="" alt="video explaining API Superstore">
 				</iframe><br>
@@ -143,8 +141,7 @@
 			</div><!-- /video div -->
 		
 			
-    	<div class="col-md-6" >
-				<div class="testimonials" data-target="Testimonials">	
+    	<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12" id="testimonials">
 				 <h3>Testimonials</h3>
 				 <p>"Top-notch APIs, very impressive library of all the APIs I needed for my projects. I am already recommending API Superstore"<br>
 					Tyler Smooth, D.D.S., J.D.<br>
@@ -158,10 +155,9 @@
 					Laura Foxy, Planning Guru,<br>
 					ACGroup Consultants.
 					</p>
-				</div><!-- /.testimonials div -->
-			 </div>
-	 	</div><!-- /.video-and-testimonials div -->
-	</section>	
+			</div><!-- /#testimonials -->
+	 	</div><!-- /#video -->
+	
 
 	<!-- description div -->
   <div class="row" style="background-color: white">
