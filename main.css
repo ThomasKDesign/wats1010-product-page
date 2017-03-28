@@ -61,12 +61,16 @@ h2 {
 
 
 #store-name {
+	float: right;
+	margin-right: 30px;
+	width: 350px;
+	height: auto;
 	
-	margin: 150px 0 100px 700px;
 
 }
 
 .carousel-wrap {
+	
 	width: 100%;
 	max-width: 1300px;
 	overflow: hidden;
@@ -121,16 +125,12 @@ h2 {
 	background-color: rgba(0,0,0,0.5);
 }
 
-.glyphicon {
+.glyphicon glyphicon-hourglass, .glyphicon glyphicon-question-sign, .glyphicon glyphicon-check {
 	padding-top: 2rem;
 	padding-bottom: 1rem;
 	color: red;
 	font-size: 500%;
 }
-.col-sm-4 span {
-	padding-left: 17rem;
-}
-
 
 .col-sm-4 h3 {
 	margin-top:0;
@@ -139,7 +139,6 @@ h2 {
 	
 }
 .col-sm-4 h3 p {
-	text-align: center;
 	color: black;
 	padding:0 0 0 7rem;
 }
