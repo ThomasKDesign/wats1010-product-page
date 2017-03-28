@@ -58,9 +58,31 @@ h2 {
 	text-shadow: -2px 2px white;
 }
 
+header {
+	height: 650px;
+	width: 100%;
+}
 
+.main {
+	background: url(../img/black-n-white-Seattle-skyline.jpg) no-repeat center top;
+	margin-top: 50px;
+	padding-top: 150px;
+	background-attachment: relative;
+	background-position: center;
+	min-height: 650px;
+	width: 100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+} 
 
 #store-name {
+	position: relative;
 	float: right;
 	margin-right: 30px;
 	width: 350px;
@@ -71,7 +93,7 @@ h2 {
 
 .carousel-wrap {
 	
-	width: 100%;
+	max-height: 450px;
 	max-width: 1300px;
 	overflow: hidden;
 	border-bottom: 1px solid white;
@@ -95,7 +117,7 @@ h2 {
 #video {
 	max-width: 1300px;
 	height: auto;
-	color: #333333;
+	background-color: #333333;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -133,14 +155,9 @@ h2 {
 }
 
 .col-sm-4 h3 {
-	margin-top:0;
-	text-align: center;
+	
 	color: black;
 	
-}
-.col-sm-4 h3 p {
-	color: black;
-	padding:0 0 0 7rem;
 }
 
 #comment-social {
@@ -166,7 +183,7 @@ h2 {
 	width: 500px;
 }
 
-#coment h3 {
+#comment h3 {
 	color: white;
 }
 
@@ -249,15 +266,7 @@ html {
    background-color: white;
 }
 
-/*body {
-  background-image: url("img/black-n-white-Seattle-skyline.jpg");
-	background-repeat: none;
-	margin: 2px 2px 2px 2px;
-  padding-top: 70px; 
-  padding-bottom: 20px;
-  font-weight: 300;
-   
-} */
+
 
 header {
 	
@@ -322,15 +331,6 @@ h3 {
 
 }
 
-#store-name {
-	
-	/*width: 500px;
-	float: right;*/
-	
-	
-
-}
-
 
 #images-carousel {
 	padding:0;
@@ -353,12 +353,6 @@ h3 {
 }
 
 
-.main {
-	
-	margin-top: 200px;
-}
-
-
 #video-and-testimonials {
 	background-color: #333333;
 	height: 510px;
@@ -369,11 +363,6 @@ h3 {
 	
 }
 
-.video {
-	margin: 5px 2px 0 10px;
-	padding: 5px;
-	
-}
 
 #video h3 {
 	margin-top: 0;
@@ -429,8 +418,8 @@ h3 {
 
 #comment-social {
   margin-top: 0;
-  background-color: #333333;
-  height: 200px;
+	width: 1005;
+  height: auto;
 }
 
 #comment {
@@ -512,10 +501,12 @@ footer {
 }
 
 footer {
-	background-color: white;
-	padding-top: 2rem;
+	background-color: #333333;
 	height: 70px;
 	width: 100%;	
+	padding-top: 30px;
+	padding-bottom: 30px;
+	clear: both;
 }
 
 footer p {
