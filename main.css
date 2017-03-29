@@ -1,17 +1,20 @@
- /* Styles for Product Page Customization */
+
+/* Styles for Product Page Customization */
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
-html {
+html,
+body {
+   max-width: 100%;
+   overflow-x: hidden;
    background-color: white;
 }
 
-
-header {  
-	 
+header {
+	
 	margin-top: 0;
 }
 
-   
+
 p {
 	font-size: 135%;
 }
@@ -34,42 +37,14 @@ li {
 }
 
 
-#brand a:hover {
-	color: red;
-}
-
-#right a:hover {
-	text-decoration: underline;
-	
-}
-
-h1 {
-  color: red;
-  font-size: 440%;
-	text-shadow: -3px 3px black;
-}
-
-h2 {
-	color: black;
-	text-shadow: 2px 2px white;
-  display: inline;
-  font-weight: bold;
-  font-size: 215%; 
-	text-shadow: -2px 2px white;
-}
-
-header {
-	height: 650px;
-	width: 100%;
-}
 
 .main {
-	background: url(../img/black-n-white-Seattle-skyline.jpg) no-repeat center top;
+	background: url(..img/black-n-white-Seattle-skyline.jpg) no-repeat;
 	margin-top: 50px;
 	padding-top: 150px;
-	background-attachment: relative;
+	background-attachment: absolute;
 	background-position: center;
-	min-height: 650px;
+	max-height: 650px;
 	width: 100%;
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
@@ -89,216 +64,6 @@ header {
 	height: auto;
 	
 
-}
-
-.carousel-wrap {
-	
-	max-height: 450px;
-	max-width: 1300px;
-	overflow: hidden;
-	border-bottom: 1px solid white;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-.carousel-caption {
-	padding-top: 50px;
-	font-size: 200%;
-	text-shadow: 2px 2px black;
-}
-
-@media screen and (max-width: 650px) {
-	.carousel-caption {
-	font-size: 100%;
-	text-shadow: none;
-}
-}
-
-#video {
-	max-width: 1300px;
-	height: auto;
-	background-color: #333333;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#video h3 {
-	margin-top: 0;
-	padding-left: 10px;
-	color: red;
-}
-
-#testimonials {
-	margin-top: 0px;
-	padding: 12px;
-	
-}
-
-#testimonials h3 {
-	padding-left: 10px;
-	margin-top: 0px;
-	color:red;
-}
-
-#testimonials p {
-	margin-top: 0px;
-	color: white;
-	font-style: italic;
-	background-color: rgba(0,0,0,0.5);
-}
-
-.glyphicon glyphicon-hourglass, .glyphicon glyphicon-question-sign, .glyphicon glyphicon-check {
-	padding-top: 2rem;
-	padding-bottom: 1rem;
-	color: red;
-	font-size: 500%;
-}
-
-.col-sm-4 h3 {
-	
-	color: black;
-	
-}
-
-#comment-social {
- margin-top: 0;
- background-color: #333333;
- height: 200px;
-}
-
-#comment {
-	padding-left: 3rem;
-	height: 200px;
-	align-content: center;
-	
-}
-
-#comment h3 textarea {
-	
-	align-content: center;
-	
-}
-
-.form-control {
-	width: 500px;
-}
-
-#comment h3 {
-	color: white;
-}
-
-.social-media img {
-	width: 50px;
-	height: 50px;
-	padding-left:0;
-}
-
-#social h3  {
-	padding-left: 4rem;
-	
-}
-
-
-.social-media li {
-
-display: inline-block;
-width: 55px;
-height: 55px;
-background: rgba(0,0,0,0.5);
-}
-
-.social-media li.facebook:hover {
-background-color: #006;
-
-}
-
-.social-media li.twitter:hover {
-   background-color: #3399ff;
-
-}
-
- .social-media li.pinterest:hover {
-  background-color: #cc0000;
-
- }
-
-.social-media li.googleplus:hover {
-  background-color: #99ff33;
-}
-
-.social-media li.linkedin :hover {
-  background-color:  white;
-	
-}
-
-.social-media li.tumblr :hover {
-  background-color: #ffff00;
-}
-
- }
-footer {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-}
-
-footer {
-	background-color: white;
-	padding-top: 2rem;
-	height: 70px;
-	width: 100%;	
-}
-
-footer p {
-	text-align: center;
-	
-}
-
-footer text {
-	font-size-adjust: small;
-}
-/* Styles for Product Page Customization */
-/* NOTE: Do not edit the Bootstrap CSS files. */
-
-html {
-   background-color: white;
-}
-
-
-
-header {
-	
-	margin-top: 0;
-}
-
-
-p {
-	font-size: 135%;
-}
-
-li {
-	font-size: 135%;
-}
-
-
-#navigation {
-	height: 50px;
-	position: fixed;
-	
-}
-
-.navbar-header {
-  width: 100%;
-  padding: 0;
-	margin-top: 0;
-}
-
-
-.main {
-	
-	margin-top: 0;
 }
 
 #brand a:hover {
@@ -331,38 +96,36 @@ h3 {
 
 }
 
-
-#images-carousel {
-	padding:0;
-	margin-top:348px;
-	width: 99%;
-	height: 465px;
-}
 .carousel-caption {
 	color: red;
 	font-size: 180%;
 	text-shadow: 2px 2px black;
-	margin-bottom: 475px; 
+
 }
 	
 .carousel-inner {
+	position: relative;
 	width: 100%;
-	height: 465px;
-	padding:0;
-	
+	max-height: 465px;
+	margin: 0 auto;
+	padding: none;
 }
 
-
-#video-and-testimonials {
-	background-color: #333333;
-	height: 510px;
-	width:100%;
-	margin: 0;
-	padding: 0;
+.carousel-wrap {
 	
-	
+	max-height: 450px;
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid white;
+	padding-left: 0;
+	padding-right: 0;
 }
 
+@media screen and (max-width: 650px) {
+	.carousel-caption {
+	font-size: 100%;
+	text-shadow: none;
+}
 
 #video h3 {
 	margin-top: 0;
@@ -370,55 +133,28 @@ h3 {
 	color: red;
 }
 
-.testimonials {
-	margin-top: 0px;
-	padding: 12px;
-	
-}
-
-.testimonials h3 {
-	margin-top: 0px;
-	color:red;
-}
-
-.testimonials p {
-	margin-top: 0px;
-	color: white;
-	font-style: italic;
-	background: rgba(0,0,0,0.5);
-}
-
-.glyphicon {
-	padding-top: 2rem;
-	padding-bottom: 1rem;
-	color: red;
-	font-size: 500%;
-}
-
 #descriptions {
 	clear: top;	
 }
 
 .col-sm-4 span {
-	padding-left: 17rem;
+	dispaly: inline-block;
+	text-align: center;
+	margin: 0 auto;
 }
 
 
 .col-sm-4 h3 {
 	margin-top:0;
-	text-align: center;
 	color: black;
 	
 }
-.col-sm-4 h3 p {
-	text-align: center;
-	color: black;
-	padding:0 0 0 7rem;
-}
 
 #comment-social {
+	background: none;
   margin-top: 0;
-	width: 1005;
+	padding-bottom: 20px;
+	width: 100%;
   height: auto;
 }
 
@@ -437,10 +173,6 @@ h3 {
 
 .form-control {
 	width: 500px;
-}
-
-#coment h3 {
-	color: white;
 }
 
 .social-media img {
@@ -491,29 +223,14 @@ h3 {
   background-color: #ffff00;
 }
 
- }
-footer {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
 
-footer {
+.footerWrap {
+	position: relative;
 	background-color: #333333;
-	height: 70px;
+	max-height: auto;
 	width: 100%;	
-	padding-top: 30px;
-	padding-bottom: 30px;
-	clear: both;
-}
-
-footer p {
-	text-align: center;
 	
+
 }
 
-footer>text {
-	font-size-adjust: small;
-}
+
