@@ -38,13 +38,13 @@ li {
 
 
 
-.main {
-	background: url(..img/black-n-white-Seattle-skyline.jpg) no-repeat;
+#main {
+	background: url(../img/black-n-white-Seattle-skyline.jpg) no-repeat top;
 	margin-top: 50px;
-	padding-top: 150px;
+	padding-top: 100px;
 	background-attachment: absolute;
 	background-position: center;
-	max-height: 650px;
+	min-height: 650px;
 	width: 100%;
 	-webkit-background-size: 100%;
 	-moz-background-size: 100%;
@@ -92,49 +92,109 @@ h2 {
 
 h3 {
 	
-	color: white;
+	color: red;
+
+}
+
+#myCarousel {
+	
+	max-height: 350px;
+	width: 100%;
+	clear: both;
+}
+
+.carousel-wrap {
+	
+	max-height: 350px;
+	width: 100%;
+	overflow: hidden;
+	border-top: 1px solid white;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.carousel-inner {
+	max-height: 350px;
+	width: 100%;
+	
+	margin: 0 auto;
+	padding: none;
+}
+
+.item {
+	height: 350px;
+	width: 100%;
+	margin: 0;
+	padding: none;
+}
+
+.item img {
+	
+ height: inherit; 
+ max-height: 100%;
 
 }
 
 .carousel-caption {
+	top: 20px;
 	color: red;
 	font-size: 180%;
 	text-shadow: 2px 2px black;
 
 }
-	
-.carousel-inner {
-	position: relative;
-	width: 100%;
-	max-height: 465px;
-	margin: 0 auto;
-	padding: none;
-}
-
-.carousel-wrap {
-	
-	max-height: 450px;
-	width: 100%;
-	overflow: hidden;
-	border-bottom: 1px solid white;
-	padding-left: 0;
-	padding-right: 0;
-}
-
 @media screen and (max-width: 650px) {
 	.carousel-caption {
-	font-size: 100%;
-	text-shadow: none;
+	font-size: 110%;
 }
 
+#myCarousel > div > div > a.left.carousel-control > span.glyphicon.glyphicon-chevron-left,
+#myCarousel > div > div > a.right.carousel-control > span.glyphicon.glyphicon-chevron-right	
+/*.glyphicon.glyphicon-chevron-right, .glyphicon.glyphicon-chevron-left*/ {
+	color: red;
+	font-size: 180px;
+	
+	}
+	
+@media screen and (max-width: 650px) {
+	#myCarousel > div > div > a.left.carousel-control > span.glyphicon.glyphicon-chevron-left,
+#myCarousel > div > div > a.right.carousel-control > span.glyphicon.glyphicon-chevron-right	  {
+	font-size: 120%;
+}
+
+#video {
+	background-color: #333333;	
+}	
+	
 #video h3 {
 	margin-top: 0;
 	padding: 12px;
 	color: red;
 }
 
-#descriptions {
-	clear: top;	
+#testimonials {
+	margin-top: 0px;
+	padding: 12px;
+	
+}
+
+#testimonials h3 {
+	padding-left: 10px;
+	margin-top: 0px;
+	color:red;
+}
+
+#testimonials p {
+	margin-top: 0px;
+	color: white;
+	font-style: italic;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.glyphicon {
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	color: red;
+	font-size: 500%;
 }
 
 .col-sm-4 span {
@@ -185,11 +245,13 @@ h3 {
 	padding-left: 4rem;
 	
 }
-
-
-.social-media li {
-
+	
+	#social ul {
+			list-style: none;
   display: inline-block;
+	}	
+
+#social > li {
   width: 55px;
   height: 55px;
   background: rgba(0,0,0,0.5);
@@ -225,12 +287,23 @@ h3 {
 
 
 .footerWrap {
-	position: relative;
+	position: bottom;
 	background-color: #333333;
-	max-height: auto;
+	max-height: 400px;
 	width: 100%;	
-	
+  
 
-}
+ }
+	
+	#footerInfo {
+	position: relative;	
+	background: none;	
+	marging: 0 none;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	clear: both;
+		
+	}
+
 
 
