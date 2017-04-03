@@ -97,15 +97,15 @@ h3 {
 
 #myCarousel {
 	
-	max-height: 350px;
+	max-height: 400px;
 	width: 100%;
 
 }
 
 .carousel-wrap {
 	
-	height: 350px;
-	min-height: 350px;
+	height: 400px;
+	min-height: 400px;
 	width: 100%;
 	overflow: hidden;
 	border-top: 1px solid white;
@@ -120,8 +120,14 @@ h3 {
 	margin: 0 auto;
 	padding: none;
 }
+*/
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
 
-.item {
+/*.item {
 	height: 350px;
 	width: 100%;
 	margin: 0;
@@ -162,7 +168,7 @@ h3 {
 	font-size: 120%;
 }
 	
-.container.video-wapper {
+.video-wapper {
 	position: relative;
 	background: #333333;
   margin-top: 0;
@@ -285,7 +291,7 @@ h3 {
 
 .footerWrap {
 	position: bottom;
-	background-color: #333333;
+	
 	max-height: 400px;
 	width: 100%;	
   
@@ -294,8 +300,8 @@ h3 {
 	
 	#footerInfo {
 	position: relative;	
-	background: none;	
-	marging: 0 none;
+	background-color: #333333;
+	marging: none;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	clear: both;
