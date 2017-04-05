@@ -97,6 +97,7 @@ h3 {
 
 .carousel-wrap {
 	height: auto;
+	min-height: 350px;
 	width: 100%;
 	max-width: 1300px;
 	overflow: hidden;
@@ -130,9 +131,10 @@ h3 {
 	font-size: 110%;
 	text-shadow: none;
 }
-
-#myCarousel > div > div > a.left.carousel-control > span.glyphicon.glyphicon-chevron-left,
-#myCarousel > div > div > a.right.carousel-control > span.glyphicon.glyphicon-chevron-right	
+}
+	
+#myCarousel > div > div > a.left.carousel-control > span.glyphicon.glyphicon-chevron-left::before,
+#myCarousel > div > div > a.right.carousel-control > span.glyphicon.glyphicon-chevron-right::before	
 /*.glyphicon.glyphicon-chevron-right, .glyphicon.glyphicon-chevron-left*/ {
 	color: red;
 	font-size: 180px;
@@ -144,10 +146,10 @@ h3 {
 #myCarousel > div > div > a.right.carousel-control > span.glyphicon.glyphicon-chevron-right	  {
 	font-size: 110%;
 }
-	
+}	
 .video-wrapper {
 	position: relative;
-	background: #333333;
+	background-color: #333333;
   margin-top: 0;
 	padding-bottom: 20px;
 	width: 100%;
@@ -162,7 +164,6 @@ h3 {
 }
 
 #comment h3 textarea {
-	
 	align-content: center;
 	
 }
@@ -264,16 +265,6 @@ h3 {
 .social-media li.tumblr :hover {
   background-color: #ffff00;
 }
-
-
-.footerWrap {
-	position: bottom;
-	
-	max-height: 400px;
-	width: 100%;	
-  
-
- }
 	
 	#footerInfo {
 	position: relative;	
