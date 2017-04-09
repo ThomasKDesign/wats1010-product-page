@@ -41,7 +41,7 @@ li {
 	background: url(../img/black-n-white-Seattle-skyline.jpg) no-repeat top;
 	margin-top: 50px;
 	padding-top: 100px;
-	background-attachment: absolute;
+	background-attachment: relative;
 	background-position: center;
 	min-height: 650px;
 	width: 100%;
@@ -202,7 +202,7 @@ span.glyphicon.glyphicon-chevron-right::before
 	padding-top: 2rem;
 	padding-bottom: 1rem;
 	color: red;
-	font-size: 200%;
+	font-size: 400%;
 }
 
 .col-sm-4 span {
@@ -256,6 +256,7 @@ span.glyphicon.glyphicon-chevron-right::before
 	}
 
 .footer {
+	margin-top: 50px;
 	clear: both;
 	position: bottom;
 	background-color: none;
