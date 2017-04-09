@@ -107,14 +107,14 @@ h3 {
 }
 
 #carousel-slide {
-	width: auto;
-	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .carousel-inner {
 	max-width: 100%;
 	max-height: 100%;
-	margin: 0 auto;
+	margin: none;
 	padding: none;
 }
 
@@ -133,8 +133,8 @@ h3 {
 }
 }
 	
-#myCarousel > div > div > a.left.carousel-control > span.glyphicon.glyphicon-chevron-left::before,
-#myCarousel > div > div > a.right.carousel-control > span.glyphicon.glyphicon-chevron-right::before	
+span.glyphicon.glyphicon-chevron-left::before,
+span.glyphicon.glyphicon-chevron-right::before	
 /*.glyphicon.glyphicon-chevron-right, .glyphicon.glyphicon-chevron-left*/ {
 	color: red;
 	font-size: 180px;
@@ -142,16 +142,16 @@ h3 {
 	}
 	
 @media screen and (max-width: 650px) {
-	#myCarousel > div > div > a.left.carousel-control > span.glyphicon.glyphicon-chevron-left,
-#myCarousel > div > div > a.right.carousel-control > span.glyphicon.glyphicon-chevron-right	  {
+	span.glyphicon.glyphicon-chevron-left,
+	span.glyphicon.glyphicon-chevron-right	  {
 	font-size: 110%;
 }
 }	
-.video-wrapper {
-	position: relative;
+
+.container-fluid.video-wapper{
 	background-color: #333333;
   margin-top: 0;
-	padding-bottom: 20px;
+	padding: 20px;
 	width: 100%;
   height: auto;
 }
@@ -193,16 +193,23 @@ h3 {
 	background-color: rgba(0,0,0,0.5);
 }
 
-.glyphicon {
+#glyphicon > div > div:nth-child(1) > span,
+#glyphicon > div > div:nth-child(2) > span,
+#glyphicon > div > div:nth-child(3) > span {
+	text-align: center;
+	vertical-align: middle;
+	padding-left: 15rem;
 	padding-top: 2rem;
 	padding-bottom: 1rem;
 	color: red;
-	font-size: 500%;
+	font-size: 200%;
 }
 
 .col-sm-4 span {
+	padding-left: 5rem;
 	dispaly: inline-block;
 	text-align: center;
+	vertical-align: middle;
 	margin: 0 auto;
 }
 
@@ -217,64 +224,49 @@ h3 {
 	width: 500px;
 }
 
-.social-media img {
-	width: 50px;
-	height: 50px;
-	padding-left:0;
+#social {
+    text-align: center;
+}
+#social .icon {
+    color: red;
+    border: 1px solid red;
+    display: inline-block;
+		cursor: pointer;
+    font-size: 18px;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 5px 10px;
+}
+#social .icon:hover{
+    color: white;
+    border: white;
 }
 
-#social h3  {
-	padding-left: 4rem;
-	
-}
-	
-.social-list {
-	list-style: none;
-}
-
-#social > li {
-  width: 55px;
-  height: 55px;
-  background: rgba(0,0,0,0.5);
-}
-
-.social-media li.facebook:hover {
-	background-color: #006;
-
-}
-
-.social-media li.twitter:hover {
-   background-color: #3399ff;
-
-}
-
- .social-media li.pinterest:hover {
-  background-color: #cc0000;
-
- }
-
-.social-media li.googleplus:hover {
-  background-color: #99ff33;
-}
-
-.social-media li.linkedin :hover {
-  background-color:  white;
-	
-}
-
-.social-media li.tumblr :hover {
-  background-color: #ffff00;
-}
-	
 	#footerInfo {
 	position: relative;	
 	background-color: #333333;
 	marging: none;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	clear: both;
+	
 		
 	}
+
+.footer {
+	clear: both;
+	position: bottom;
+	background-color: none;
+}
+
+.footer p {
+	
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+}
 
 
 
