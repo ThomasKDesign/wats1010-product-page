@@ -228,7 +228,7 @@ span.glyphicon.glyphicon-chevron-right::before
 
 #social {
     text-align: center;
-		border-bottom: 1px solid white;
+		
 }
 #social .icon {
     color: red;
@@ -246,6 +246,11 @@ span.glyphicon.glyphicon-chevron-right::before
 #social .icon:hover{
     color: white;
     border: white;
+}
+
+.footer-divider {
+		border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
 	#footerInfo {
@@ -266,7 +271,7 @@ span.glyphicon.glyphicon-chevron-right::before
 }
 
 .footer p {
-	font-size: 70%;
+	font-size: 90%;
 	color: white;
 	text-align: center;
 	vertical-align: middle;
