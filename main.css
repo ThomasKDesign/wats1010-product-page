@@ -5,6 +5,7 @@
 html,
 body {
    max-width: 100%;
+	overflow-x: hidden;
    background-color: white;
 }
 
@@ -58,7 +59,7 @@ li {
 #store-name {
 	position: relative;
 	float: right;
-	margin-right: 30px;
+	margin-right: 20px;
 	width: 350px;
 	height: auto;
 	
@@ -226,6 +227,7 @@ span.glyphicon.glyphicon-chevron-right::before
 
 #social {
     text-align: center;
+		border-bottom: 1px solid white;
 }
 #social .icon {
     color: red;
@@ -248,7 +250,7 @@ span.glyphicon.glyphicon-chevron-right::before
 	#footerInfo {
 	position: relative;	
 	background-color: #333333;
-	marging: none;
+	margin-top: 50px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	
@@ -263,7 +265,7 @@ span.glyphicon.glyphicon-chevron-right::before
 }
 
 .footer p {
-	
+	font-size: 70%;
 	color: white;
 	text-align: center;
 	vertical-align: middle;
