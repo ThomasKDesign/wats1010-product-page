@@ -216,6 +216,7 @@ span.glyphicon.glyphicon-chevron-right::before
 
 
 .col-sm-4 h3 {
+	text-align: center;
 	margin-top:0;
 	color: black;
 	
