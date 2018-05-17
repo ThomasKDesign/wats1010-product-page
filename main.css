@@ -39,7 +39,7 @@ li {
 
 
 #main {
-	background: url(../img/black-n-white-Seattle-skyline.jpg) no-repeat top;
+	background: url(../img/Seattle_skyline_blackNwhite.jpg) no-repeat top;
 	margin-top: 50px;
 	padding-top: 100px;
 	background-attachment: relative;
@@ -96,27 +96,26 @@ h3 {
 
 }
 
-.carousel-wrap {
-	height: auto;
-	min-height: 350px;
-	width: 100%;
-	max-width: 1300px;
-	overflow: hidden;
+.container-fluid .carousel-wrap {
+	height: 100%;
+	min-height: 550px;
+	width: auto;
 	border-top: 1px solid white;
 	padding-left: 0;
 	padding-right: 0;
 }
 
-#carousel-slide {
-	max-width: 100%;
-	max-height: 100%;
+#myCarousel {
+	height: 100%;
+	width: auto;
 }
 
 .carousel-inner {
 	max-width: 100%;
 	max-height: 100%;
 	margin: none;
-	padding: none;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 
@@ -133,10 +132,11 @@ h3 {
 	text-shadow: none;
 }
 }
-	
-span.glyphicon.glyphicon-chevron-left::before,
-span.glyphicon.glyphicon-chevron-right::before	
-/*.glyphicon.glyphicon-chevron-right, .glyphicon.glyphicon-chevron-left*/ {
+
+
+span.glyphicon.glyphicon-chevron-left,
+span.glyphicon.glyphicon-chevron-right	
+.glyphicon.glyphicon-chevron-right, .glyphicon.glyphicon-chevron-left{
 	color: red;
 	font-size: 180px;
 	
@@ -144,29 +144,20 @@ span.glyphicon.glyphicon-chevron-right::before
 	
 @media screen and (max-width: 650px) {
 	span.glyphicon.glyphicon-chevron-left,
-	span.glyphicon.glyphicon-chevron-right	  {
+	span.glyphicon.glyphicon-chevron-right,
+	#carousel-slide > a.right.carousel-control > span.glyphicon.glyphicon-chevron-right{
 	font-size: 110%;
 }
 }	
 
+
 .container-fluid.video-wapper{
+	position: absolute;
 	background-color: #333333;
   margin-top: 0;
 	padding: 20px;
 	width: 100%;
   height: auto;
-}
-
-#comment {
-	padding-left: 3rem;
-	height: 200px;
-	align-content: center;
-	
-}
-
-#comment h3 textarea {
-	align-content: center;
-	
 }
 	
 #video h3 {
@@ -223,7 +214,7 @@ span.glyphicon.glyphicon-chevron-right::before
 }
 
 .form-control {
-	width: 500px;
+	width: 85%;
 }
 
 #social {
@@ -246,6 +237,12 @@ span.glyphicon.glyphicon-chevron-right::before
 #social .icon:hover{
     color: white;
     border: white;
+}
+
+@media screen and (max-width: 650px) {
+	#social .icon {
+	font-size: 110%;
+}
 }
 
 .footer-divider {
@@ -273,8 +270,8 @@ span.glyphicon.glyphicon-chevron-right::before
 
 .footer p {
 	font-size: 90%;
-	font-weight: none;git
-	color: white;
+	font-weight: none;
+	color: #d7dbe2;
 	text-align: center;
 	vertical-align: middle;
 }
