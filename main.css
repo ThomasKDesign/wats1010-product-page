@@ -1,280 +1,256 @@
-
 /* Styles for Product Page Customization */
+
 /* NOTE: Do not edit the Bootstrap CSS files. */
 
 html,
-body {
-   max-width: 100%;
-	overflow-x: hidden;
-   background-color: white;
+body, section {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: white;
 }
 
-header {
-	
-	margin-top: 0;
-}
-
+/*header {
+  margin-top: 0;
+} */
 
 p {
-	font-size: 135%;
+  font-size: 135%;
 }
 
 li {
-	font-size: 135%;
+  font-size: 135%;
 }
 
-
 #navigation {
-	height: 50px;
-	position: fixed;
-	
+  height: 50px;
+  position: fixed;
 }
 
 .navbar-header {
   width: 100%;
   padding: 0;
-	margin-top: 0;
+  margin-top: 0;
 }
 
-
-
 #main {
-	background: url(../img/Seattle_skyline_blackNwhite.jpg) no-repeat top;
-	margin-top: 50px;
-	padding-top: 100px;
-	background-attachment: relative;
-	background-position: center;
-	min-height: 650px;
-	width: 100%;
-	-webkit-background-size: 100%;
-	-moz-background-size: 100%;
-	-o-background-size: 100%;
-	background-size: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-} 
+  background: url(../img/Seattle_skyline_blackNwhite.jpg) no-repeat top;
+  margin-top: 50px;
+  padding-top: 10px;
+  background-attachment: relative;
+  background-position: center;
+  min-height: 650px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 #store-name {
-	position: relative;
-	float: right;
-	margin-right: 20px;
-	width: 350px;
-	height: auto;
-	
-
+  position: relative;
+  float: right;
+  margin-right: 20px;
+  width: 350px;
+  height: auto;
 }
 
 #brand a:hover {
-	color: red;
+  color: red;
 }
 
 #right a:hover {
-	text-decoration: underline;
-	
+  text-decoration: underline;
 }
 
 h1 {
   color: red;
   font-size: 440%;
-	text-shadow: -3px 3px black;
+  text-shadow: -3px 3px black;
 }
 
 h2 {
-	color: black;
-	text-shadow: 2px 2px white;
+  color: black;
+  text-shadow: 2px 2px white;
   display: inline;
   font-weight: bold;
-  font-size: 215%; 
-	text-shadow: -2px 2px white;
+  font-size: 215%;
+  text-shadow: -2px 2px white;
 }
 
 h3 {
-	
-	color: red;
-
+  color: red;
 }
 
 .container-fluid .carousel-wrap {
-	height: 100%;
-	min-height: 550px;
-	width: auto;
-	border-top: 1px solid white;
-	padding-left: 0;
-	padding-right: 0;
+  height: 100%;
+  min-height: 550px;
+  width: auto;
+  border-top: 1px solid white;
+  padding: none;
 }
 
 #myCarousel {
-	height: 100%;
-	width: auto;
+  height: auto;
+  width: 100%;
 }
 
 .carousel-inner {
-	max-width: 100%;
-	max-height: 100%;
-	margin: none;
-	padding-left: 10px;
-	padding-right: 10px;
+  max-width: 100%;
+  max-height: auto;
+  margin: none;
+  padding: none;
 }
-
 
 .carousel-caption {
-	top: 20px;
-	color: red;
-	font-size: 180%;
-	text-shadow: 2px 2px black;
-
+  top: 20px;
+  color: red;
+  font-size: 180%;
+  text-shadow: 2px 2px black;
 }
+/*
 @media screen and (max-width: 650px) {
-	.carousel-caption {
-	font-size: 110%;
-	text-shadow: none;
-}
+  .carousel-caption {
+    font-size: 110%;
+    text-shadow: none;
+  }
 }
 
 
 span.glyphicon.glyphicon-chevron-left,
-span.glyphicon.glyphicon-chevron-right	
-.glyphicon.glyphicon-chevron-right, .glyphicon.glyphicon-chevron-left{
-	color: red;
-	font-size: 180px;
-	
-	}
-	
-@media screen and (max-width: 650px) {
-	span.glyphicon.glyphicon-chevron-left,
-	span.glyphicon.glyphicon-chevron-right,
-	#carousel-slide > a.right.carousel-control > span.glyphicon.glyphicon-chevron-right{
-	font-size: 110%;
+span.glyphicon.glyphicon-chevron-right .glyphicon.glyphicon-chevron-right,
+.glyphicon.glyphicon-chevron-left {
+  color: red;
+  font-size: 180px;
 }
-}	
 
+@media screen and (max-width: 650px) {
+  span.glyphicon.glyphicon-chevron-left,
+  span.glyphicon.glyphicon-chevron-right,
+  #carousel-slide>a.right.carousel-control>span.glyphicon.glyphicon-chevron-right {
+    font-size: 110%;
+  }
+*/
 
-.container-fluid.video-wapper{
-	position: absolute;
-	background-color: #333333;
+.container-fluid.video-wapper {
+  position: absolute;
+  background-color: #333333;
   margin-top: 0;
-	padding: 20px;
-	width: 100%;
+  padding: 20px;
+  width: 100%;
   height: auto;
 }
-	
+
 #video h3 {
-	margin-top: 0;
-	padding: 12px;
-	color: red;
+  margin-top: 0;
+  padding: 12px;
+  color: red;
 }
 
 #testimonials {
-	margin-top: 0px;
-	padding: 12px;
-	
+  margin-top: 0px;
+  padding: 12px;
 }
 
 #testimonials h3 {
-	padding-left: 10px;
-	margin-top: 0px;
-	color:red;
+  padding-left: 10px;
+  margin-top: 0px;
+  color: red;
 }
 
 #testimonials p {
-	margin-top: 0px;
-	color: white;
-	font-style: italic;
-	background-color: rgba(0,0,0,0.5);
+  margin-top: 0px;
+  color: white;
+  font-style: italic;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-#glyphicon > div > div:nth-child(1) > span,
-#glyphicon > div > div:nth-child(2) > span,
-#glyphicon > div > div:nth-child(3) > span {
-	text-align: center;
-	vertical-align: middle;
-	padding-left: 15rem;
-	padding-top: 2rem;
-	padding-bottom: 1rem;
-	color: red;
-	font-size: 400%;
+#glyphicon>div>div:nth-child(1)>span,
+#glyphicon>div>div:nth-child(2)>span,
+#glyphicon>div>div:nth-child(3)>span {
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 15rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  color: red;
+  font-size: 400%;
 }
 
 .col-sm-4 span {
-	padding-left: 5rem;
-	dispaly: inline-block;
-	text-align: center;
-	vertical-align: middle;
-	margin: 0 auto;
+  padding-left: 5rem;
+  dispaly: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto;
 }
 
-
 .col-sm-4 h3 {
-	text-align: center;
-	margin-top:0;
-	color: black;
-	
+  text-align: center;
+  margin-top: 0;
+  color: black;
 }
 
 .form-control {
-	width: 85%;
+  width: 85%;
 }
 
 #social {
-    text-align: center;
-		
+  text-align: center;
 }
+
 #social .icon {
-    color: red;
-    border: 1px solid red;
-    display: inline-block;
-		cursor: pointer;
-    font-size: 18px;
-    width: 34px;
-    height: 34px;
-    line-height: 34px;
-    text-align: center;
-    vertical-align: middle;
-    margin: 0 5px 10px;
+  color: red;
+  border: 1px solid red;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 18px;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 5px 10px;
 }
-#social .icon:hover{
-    color: white;
-    border: white;
+
+#social .icon:hover {
+  color: white;
+  border: white;
 }
 
 @media screen and (max-width: 650px) {
-	#social .icon {
-	font-size: 110%;
-}
+  #social .icon {
+    font-size: 110%;
+  }
 }
 
 .footer-divider {
-		
-		border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-	#footerInfo {
-	position: relative;	
-	background-color: #333333;
-	margin-top: 50px;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	
-		
-	}
+#footerInfo {
+  position: relative;
+  background-color: #333333;
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .footer {
-	margin-top: 50px;
-	clear: both;
-	position: bottom;
-	background-color: none;
+  margin-top: 50px;
+  clear: both;
+  position: bottom;
+  background-color: none;
 }
 
 .footer p {
-	font-size: 90%;
-	font-weight: none;
-	color: #d7dbe2;
-	text-align: center;
-	vertical-align: middle;
+  font-size: 90%;
+  font-weight: none;
+  color: #d7dbe2;
+  text-align: center;
+  vertical-align: middle;
 }
-
-
-
