@@ -9,9 +9,9 @@ body, section {
   background-color: white;
 }
 
-/*header {
+header {
   margin-top: 0;
-} */
+} 
 
 p {
   font-size: 135%;
@@ -106,19 +106,24 @@ h3 {
 }
 
 .carousel-caption {
+	font-size: 200%;
+	text-shadow: 2px 2px black;
+}
+
+@media screen and (max-width: 650px) {
+	.carousel-caption {
+	font-size: 100%;
+	text-shadow: none;
+}
+}
+
+/*
+.carousel-caption {
   top: 20px;
   color: red;
   font-size: 180%;
   text-shadow: 2px 2px black;
 }
-/*
-@media screen and (max-width: 650px) {
-  .carousel-caption {
-    font-size: 110%;
-    text-shadow: none;
-  }
-}
-
 
 span.glyphicon.glyphicon-chevron-left,
 span.glyphicon.glyphicon-chevron-right .glyphicon.glyphicon-chevron-right,
@@ -221,11 +226,13 @@ span.glyphicon.glyphicon-chevron-right .glyphicon.glyphicon-chevron-right,
   border: white;
 }
 
+/*
 @media screen and (max-width: 650px) {
   #social .icon {
     font-size: 110%;
   }
 }
+*/
 
 .footer-divider {
   border-top: 1px solid #f8f8f8;
